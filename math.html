@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>fraction</title>
+<link rel="stylesheet" type="text/css" href="testcord.css" />
+<link rel="stylesheet" type="text/css" href="testcord3.css" />
+<link rel="stylesheet" type="text/css" href="testcord3x.css" />
+
+</head>
+<body>
+<div id="bar" class="bar" >JAMB-2017
+</div>
+
+<div class="instr" style="background-color:#FFF">
+<div class="bar2" style="text-align:center">INSTRUCTION</div>
+Read carefully!<br>
+every formalar and step has been crafted and breakdown into line by line. The blue boxes can hold a number. select a box by clicking it and you shall see it been underlined meaning you are currently selecting it. below the screen are options that can be used to fill the blue boxes, make sure you fill it with coreect answers by clicking on touching it.<br />
+after you are finished a question click on submit button and your score will be displayed.<br />
+Use the 'Previous' button and 'Next' button to (navigate) go to different pages.
+<br />
+<div style="text-align:center;">
+<div class="check" onClick="startin()">START</div>
+</div>
+</div>
+
+<div id="content" style=" display:none">
+<div class="check" onClick="prevo()" style="float:left">Previous</div>
+<div class="check" onClick="nexT()" style="float:right">Next</div>
+<div class="bar2" style="text-align:center">
+No. 1
+</div>
+
+
+
+<div id="slider" style="position:absolute; display:none; text-align:center;background-color:#FFF;box-shadow:1px 4px 11px 4px rgba(0, 0, 0, 0.4); border:solid 2px #666666;"></div>
+<div class="qcontainer">
+
+<div class="lcont">
+
+<span class="ntorW">2</span>
+<span class="numi">
+<div class="ntor">1</div>
+
+<span class="ntD">
+<div class="ntor">2</div>
+</span>
+
+</span>
+
+<span class="ntorW">+</span>
+<span class="numi">
+<div class="ntor">1</div>
+
+<span class="ntD">
+<div class="ntor">2</div>
+</span>
+
+</span>
+
+</div>
+<div class="lcont">
+
+<span class="ntorW">=</span>
+<span class="numi">
+<div onClick="foc2x(0)" class="ansbox ntor">-</div>
+
+<span class="ntD">
+<div onClick="foc2x(1)" class="ansbox ntor">-</div>
+</span>
+
+</span>
+
+<span class="ntorW">+</span>
+<span class="numi">
+<div onClick="foc2x(2)" class="ansbox ntor">-</div>
+
+<span class="ntD">
+<div onClick="foc2x(3)" class="ansbox ntor">-</div>
+</span>
+
+</span>
+
+</div>
+
+<div class="lcont">
+<span class="ntorW">=</span>
+<span class="numi un">
+
+<span onClick="foc2x(4)" class="ansbox ntor">-</span>
+<span class="signs">+</span>
+<span onClick="foc2x(5)" class="ansbox ntor">-</span>
+</span>
+
+<div class="numi ntorD" style="">
+<div style="display:inline-block;">
+<span onClick="foc2x(6)" class="ansbox ntor">-</span>
+</div>
+</div>
+</div>
+
+<div class="lcont">
+
+<span class="ntorW">=</span>
+<span class="numi">
+<div onClick="foc2x(7)" class="ansbox ntor">-</div>
+
+<span class="ntD">
+<div onClick="foc2x(8)" class="ansbox ntor">-</div>
+</span>
+
+</span>
+
+<span class="ntorW">=</span>
+<span class="numi">
+<div onClick="foc2x(9)" class="ansbox ntor ntorW">3</div>
+
+</span>
+
+</div>
+
+</div>
+
+
+<div class="qcontainer numerator">
+
+<div class="numi">2<div class="nfra">x</div> + 6 = 50</div>
+2<div class="nfra">x</div> = <div onClick="foc2x(0)" class="ntor ntorx ansbox1">-</div>-6
+<div><div onClick="foc2x(1)" class="nfra ntor ansbox1">-</div> = <div onClick="foc2x(2)" class="ntor ntorx ansbox1">-</div></div>
+
+<div class="lcont">
+
+<span class="nfrac">x</span>
+<span class="ntorW">=</span>
+<span class="numi">
+<div onClick="foc2x(3)" class="ansbox1 ntor">-</div>
+
+<span class="ntD">
+<div onClick="foc2x(4)" class="ansbox1 ntor">-</div>
+</span>
+
+</span>
+<span class="ntorW">=</span>
+<span class="numi">
+<div class="nfrac">
+<div onClick="foc2x(5)" class="ntor ansbox1">-</div>
+</div>
+
+</span>
+</div>
+
+</div>
+
+
+<div class="qcontainer">
+<div class="numi">
+4 + 4 X 4 - 4/4
+<br />=
+<div onClick="foc2x(0)" class="ntor ntorx ansbox2">-</div> +
+<div onClick="foc2x(1)" class="ntor ntorx ansbox2">-</div> -
+<div onClick="foc2x(2)" class="ntor ntorx ansbox2">-</div>
+
+<div class="explainBox">BODMAS</div>
+<br />=
+<div onClick="foc2x(3)" class="ntor ntorx ansbox2">-</div>
+<div class="explainBox">Then the 4 + 16 - 1 = 19</div>
+
+</div>
+<br>
+<button class="exp" onClick="explain(queNo)">explain</button>
+</div>
+
+
+<div class="qcontainer">
+<div class="numi">
+2ax+6bx-4ay-12by<br />
+=2x(<div onClick="foc2x(3)" class="ntor ntorx ansbox3">-</div>+3b)-<div onClick="foc2x(3)" class="ntor ntorx ansbox3">*</div>(a+<div onClick="foc2x(3)" class="ntor ntorx ansbox3">*</div>)<br />
+=(<div onClick="foc2x(3)" class="ntor ntorx ansbox3">.</div>-<div onClick="foc2x(3)" class="ntor ntorx ansbox3">*</div>)(<div onClick="foc2x(3)" class="ntor ntorx ansbox3">*</div>+<div onClick="foc2x(3)" class="ntor ntorx ansbox3">*</div>)<br />
+=<div onClick="foc2x(3)" class="ntor ntorx ansbox3">*</div>(x-<div onClick="foc2x(3)" class="ntor ntorx ansbox3">*</div>)(a+<div onClick="foc2x(3)" class="ntor ntorx ansbox3">*</div>)
+<br />
+<!--
+2ax+6bx-4ay-12by<br />
+=2x(a+3b)-4y(a+3b)<br />
+=(2x-4y)(a+3b)<br />
+=2(x-2y)(a+3b)
+//.....
+2ax + 6bx - 4ay - 12by
+(2ax + 6bx) - (4ay - 12by)
+2x(a+3b)-4y(a-3b)
+-->
+</div>
+</div>
+
+<div class="qcontainer">
+
+<div class="lcont">
+
+<span class="ntorH">(</span>
+<span class="numi">
+<div class="ntor">16</div>
+
+<span class="ntD">
+<div class="ntor">81</div>
+</span>
+
+</span>
+<span class="ntorH">)</span>
+
+<span class="numi sign NoUp">-</span>
+<span class="numi NoUp">
+<div class="ntorSup">3</div>
+<div class="ntD ntorSup">4</div>
+</span>
+
+<span class="ntorW">=</span>
+<span class="numi">
+<div>
+<div onClick="foc2x(0)" class="ntor ansbox4" style="display:inline-block">.</div>
+</div>
+<span class="ntD spaceUp">
+
+<span class="ntorH">(</span>
+<span class="numi">
+<div onClick="foc2x(1)" class="ntor ansbox4">.</div>
+
+<span class="ntD">
+<div onClick="foc2x(2)" class="ntor ansbox4">.</div>
+</span>
+
+</span>
+<span class="ntorH">)</span>
+</span>
+
+</span>
+
+</div>
+<div class="lcont">
+
+<span class="ntorW">=</span>
+<span class="ntorH">(</span>
+<span class="numi">
+<div onClick="foc2x(3)" class="ntor ansbox4">.</div>
+
+<span class="ntD">
+<div onClick="foc2x(4)" class="ntor ansbox4">.</div>
+</span>
+
+</span>
+<span class="ntorH">)</span>
+
+
+<span class="numi NoUp">
+<div class="ntorSup">3</div>
+<div class="ntD ntorSup">4</div>
+</span>
+
+</div>
+<div class="lcont">
+<span class="ntorW">=</span>
+
+
+<span class="ntorH">(</span>
+
+<span class="numi"><img src="images/sq7.png" class="signMargin" /></span>
+<span class="numi">
+<div class="ntD">
+<div onClick="foc2x(5)" class="ntor ansbox4">.</div>
+</div>
+
+<span class="ntD">
+<div onClick="foc2x(6)" class="ntor ansbox4">.</div>
+</span>
+
+</span>
+<span class="ntorH">)</span>
+<span class="numi NoUp">
+<div class="ntorSup">3</div>
+</span>
+
+
+</div>
+
+<div class="lcont">
+
+<span class="ntorW">=</span>
+<span class="ntorH">(</span>
+<span class="numi"></span>
+<span class="numi">
+<div onClick="foc2x(7)" class="ntor ansbox4">.</div>
+
+<span class="ntD">
+<div onClick="foc2x(8)" class="ntor ansbox4">.</div>
+</span>
+
+</span>
+<span class="ntorH">)</span>
+<span class="numi NoUp">
+<div class="ntorSup Nole">3</div>
+</span>
+</div>
+
+<div class="lcont">
+
+<span class="ntorW">=</span>
+<span class="ntorW">
+<img src="images/plusminus.png" />
+</span>
+<span class="numi">
+<div onClick="foc2x(9)" class="ntor ansbox4"> .</div>
+
+<span class="ntD">
+<div onClick="foc2x(10)" class="ntor ansbox4">.</div>
+</span>
+
+</span>
+</div>
+</div>
+<!-- the questions finished here -->
+<div class="cbase" style="position:fixed; bottom:0px; width:100%; text-align:center;">
+<div class="ansbase">
+
+</div>
+	</div>
+    
+<!-- 1 -->
+<div class="abase">
+<div onClick="mashx(0)" class="ntor opbox ntorx">5</div>
+<div onClick="mashx(1)" class="ntor ntorx opbox">6</div>
+<div onClick="mashx(2)" class="ntor ntorx opbox">2<i>x</i></div>
+<div onClick="mashx(3)" class="ntor ntorx opbox" id="a4">2</div>
+<div onClick="mashx(4)" class="ntor ntorx opbox" id="a4">2</div>
+<div onClick="mashx(5)" class="ntor ntorx opbox" id="a4">1</div>
+<div onClick="mashx(6)" class="ntor ntorx opbox" id="a4">1</div>
+<div onClick="mashx(7)" class="ntor ntorx opbox" id="a4">2</div>
+<div onClick="mashx(8)" class="ntor ntorx opbox" id="a4">3</div>
+<div onClick="mashx(9)" class="ntor ntorx opbox" id="a4">5</div>
+
+</div>
+<!-- 2 -->
+<div class="abase">
+
+<div onClick="mashx(0)" class="ntor ntorx opbox1" id="a4">6</div>
+<div onClick="mashx(1)" class="ntor ntorx opbox1" id="a4">50</div>
+<div onClick="mashx(2)" class="ntor ntorx opbox1" id="a4">44</div>
+<div onClick="mashx(3)" class="ntor ntorx opbox1" id="a4">2<i>x</i></div>
+<div onClick="mashx(4)" class="ntor ntorx opbox1" id="a4">22</div>
+<div onClick="mashx(5)" class="ntor ntorx opbox1" id="a4">44</div>
+<div onClick="mashx(6)" class="ntor ntorx opbox1" id="a4">2</div>
+
+</div>
+<!-- 3 -->
+<div class="abase">
+
+<div onClick="mashx(0)" class="ntor ntorx opbox2" id="a4">4</div>
+<div onClick="mashx(1)" class="ntor ntorx opbox2" id="a4">16</div>
+<div onClick="mashx(2)" class="ntor ntorx opbox2" id="a4">1</div>
+<div onClick="mashx(3)" class="ntor ntorx opbox2" id="a4">8</div>
+<div onClick="mashx(4)" class="ntor ntorx opbox2" id="a4">2</div>
+<div onClick="mashx(5)" class="ntor ntorx opbox2" id="a4">5</div>
+<div onClick="mashx(6)" class="ntor ntorx opbox2" id="a4">6</div>
+<div onClick="mashx(7)" class="ntor ntorx opbox2" id="a4">32</div>
+<div onClick="mashx(8)" class="ntor ntorx opbox2" id="a4">19</div>
+
+</div>
+
+<!-- 4 -->
+<div class="abase">
+
+<div onClick="mashx(0)" class="ntor ntorx opbox3" id="a4">a</div>
+<div onClick="mashx(1)" class="ntor ntorx opbox3" id="a4">3b</div>
+<div onClick="mashx(2)" class="ntor ntorx opbox3" id="a4">2y</div>
+<div onClick="mashx(3)" class="ntor ntorx opbox3" id="a4">2</div>
+<div onClick="mashx(4)" class="ntor ntorx opbox3" id="a4">3b</div>
+<div onClick="mashx(5)" class="ntor ntorx opbox3">a</div>
+<div onClick="mashx(6)" class="ntor ntorx opbox3">4y</div>
+<div onClick="mashx(7)" class="ntor ntorx opbox3">2x</div>
+<div onClick="mashx(8)" class="ntor ntorx opbox3">3b</div>
+<div onClick="mashx(9)" class="ntor ntorx opbox3">4y</div>
+<div onClick="mashx(10)" class="ntor ntorx opbox3">a</div>
+
+</div>
+
+<!-- 5 -->
+<div class="abase">
+
+<div onClick="mashx(0)" class="ntor ntorx opbox4" id="a4">1</div>
+<div onClick="mashx(1)" class="ntor ntorx opbox4" id="a4">16</div>
+<div onClick="mashx(2)" class="ntor ntorx opbox4" id="a4">81</div>
+<div onClick="mashx(3)" class="ntor ntorx opbox4" id="a4">81</div>
+<div onClick="mashx(4)" class="ntor ntorx opbox4" id="a4">16</div>
+<div onClick="mashx(5)" class="ntor ntorx opbox4">81</div>
+<div onClick="mashx(6)" class="ntor ntorx opbox4">16</div>
+<div onClick="mashx(7)" class="ntor ntorx opbox4">
+<img src="images/4.png" />3</div>
+<div onClick="mashx(8)" class="ntor ntorx opbox4">
+<img src="images/5.png" />2</div>
+<div onClick="mashx(9)" class="ntor ntorx opbox4">27</div>
+<div onClick="mashx(10)" class="ntor ntorx opbox4">8</div>
+
+</div>
+<div class="checkBAR">
+<div id='score' style="display:inline-block"></div>
+<div class="check" onClick="markIT()">Submit</div>
+</div>
+
+<!-- gauge -->
+<div class="ntor ntorx" id="gauge" style="position:fixed"></div>
+<div class="ntor ntorx" id="gauge2" style="position:fixed"></div>
+
+<script type="text/javascript" src="jq.js"></script>
+
+<script type="text/javascript" src="testcord3.js"></script>
+<script type="text/javascript" src="testcord3x.js"></script>
+<script type="text/javascript" src="testcord3_Answer.js"></script>
+<script type="text/javascript" src="testcord3xbigScreen.js"></script>
+
+<div id="spacer" style="min-height:100px;">
+</div>
+</div>
+</body>
+</html>

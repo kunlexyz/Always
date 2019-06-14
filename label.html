@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>Test</title>
+<style>
+.intLink {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0000ff;
+}
+
+.opx{
+	font-size:32px;
+	background-color:#EEE;
+	border-bottom:#000 solid 4px;
+	width:200px;}
+
+.cont{
+	background-color:#CCC;
+	font-size:32px;
+	width:300px;
+	float:left;}
+.rem{padding-top:8px; position:absolute;}
+body{font-size:22px;
+text-align:center;}
+.hh{font-size:47px;
+font-weight:bolder;
+}
+
+</style>
+
+</head>
+<body>
+<div class="hh">The Optical System</div>
+<div style="text-align:left">Label the Picture below</div><br/>
+<div class="cont">
+<table border="1"><tr><td>
+1.<Input type="text" class="opx" onBlur="gg(0)"  /><span class="rem"></span></td></tr><tr><td>2.<Input type="text" class="opx" onBlur="gg(1)"  /><span class="rem"></span></td></tr><tr><td>3.<Input type="text" class="opx" onBlur="gg(2)"  /><span class="rem"></span></td></tr><tr><td>4.<Input type="text" class="opx" onBlur="gg(3)"  /><span class="rem"></span></td></tr><tr><td>5.<Input type="text" class="opx" onBlur="gg(4)"  /><span class="rem"></span></td></tr><tr><td>6.<Input type="text" class="opx" onBlur="gg(5)"  /><span class="rem"></span></td></tr><tr><td>7.<Input type="text" class="opx" onBlur="gg(6)"  /><span class="rem"></span></td></tr><tr><td>8.<Input type="text" class="opx" onBlur="gg(7)"  /><span class="rem"></span></td></tr><tr><td>9.<Input type="text" class="opx" onBlur="gg(8)"  /><span class="rem"></span></td></tr><tr><td>10.<Input type="text" class="opx" onBlur="gg(9)"  /><span class="rem"></span>
+</td></tr></table>
+</div>
+
+<img src="eye.jpg" />
+</body>
+<script type="text/javascript">
+function checkme(qn){
+document.getElementsByClassName('cont')[qn].value;
+}
+
+function gg(qn){
+vv=document.getElementsByClassName('opx');
+vv=vv[qn].value;
+	//alert(ans[0]);
+	if(vv.toUpperCase()==ans[qn].toUpperCase()){
+document.getElementsByClassName('rem')[qn].innerHTML='<img src="correctx.jpg" />';}
+else{
+document.getElementsByClassName('rem')[qn].innerHTML='<img src="wrongx.jpg" />';}
+}
+var ans=new Array("ciliary body","ciliary Muscle","zonules","pupil","lens","iris","comea","conjunctiva","orbital muscles","optic nerve");
+</script>
+</html>

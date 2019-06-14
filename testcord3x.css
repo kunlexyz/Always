@@ -1,0 +1,89 @@
+body{background-color:#59C;
+margin:0px; padding:0px;}
+
+@font-face{
+	font-family:myFirstFont;
+	src:url(css/times.ttf);
+}
+
+.explainBox{
+	font-size:14px;
+	display:none;
+	background-color:#CCC}
+
+.mk{position:absolute;}
+.abase{display:none;}
+.u1{display:inline-block;
+font-size:46px;
+padding-top:7px;
+float:left;}
+.bar{background-color:#039;
+color:#FFF;
+text-align:center;
+font-weight:bold;
+}
+.bar2{background-color:#09F;
+color:#000;}
+
+.signs{
+padding-left:8px;
+padding-right:8px;}
+
+.sq{margin: -4px -3px -4px 0px;}
+
+.un{border-bottom:medium solid;
+border-bottom-color:#000;}
+
+/***Check and CheckBAR***/
+.checkBAR{
+background-color:#EEEEFF;
+text-align:right;}
+.check{
+background-color:#09F;
+display:inline-block;
+padding:4px;
+border-radius:5px;
+cursor:pointer;}
+
+/***Answerbar, ansBar and ans***/
+
+.ansbase{
+	background-color:#06F;
+	display:inline-block;
+margin:auto;
+text-align:center;
+padding-left:10px;
+}
+
+.cbase{background-color:#060;}
+/*additional fraction*/
+.nfrac{min-height:50px;
+padding-top:19px;
+font-style:italic;}
+.nfra{
+font-style:italic;
+display:inline-block;}
+
+
+.sign{font-size:36px;
+color:#F0C;}
+
+.signMargin{
+	margin:0px -10px -7px -16px;
+color:#F0C;}
+
+.spaceUp{
+	padding-top:10px;}
+	
+.NoUp{
+    margin-top: -8px;}
+
+.Nole{
+    margin-left: -8px;}
+
+.tablefunny{border-left:solid 3px #000;
+border-right:solid 3px #000;}
+
+.tablefunny td{
+	padding-left:7px;
+	padding-right:7px;}
